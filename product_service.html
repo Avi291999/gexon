@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="responsive.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+
+  <script src="./src/js/scroll-out.min.js"></script>
+
+<link href="./src/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/style.css">
+  <title> Landing Page </title>
+<style>
+
+.product-card .card {
+    margin: 20px;
+    overflow: hidden;
+}
+.product-card .card .card-content {
+    padding: 5px;
+}
+.product-card .card .price {
+    width: 70px;
+    height: 70px;
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 70px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    letter-spacing: 0;
+}
+.product-card ul.card-action-buttons {
+    margin: 5px 7px 0 0;
+    text-align: right;
+}
+.product-card ul.card-action-buttons li {
+    display: inline-block;
+    padding-left: 7px;
+}
+.product {
+    width: 20%;
+    padding: 10px;
+}
+.product .card {
+    margin: 0;
+}
+.product .card .card-content {
+    padding: 5px 10px;
+}
+div.see-more:last-of-type{width:100%;text-align:center; margin-top: 20px; background-color:#03A9DD;}
+div.see-more a {color:#fff}
+
+.product-img{
+  height: 18rem;
+  width: 24rem;
+}
+
+
+.card-title{
+    background: #357b92;
+    color: #fff;
+}
+
+
+nav li:after{
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    nav li:hover:after{
+        width: 100%;
+        background: rgb(255, 255, 255);
+    }
+
+    nav li a{
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .j-center{
+        justify-content: center;
+    }
+
+      .nav-header{
+        font-size: 19px;
+      }
+    .menu_link{
+      color: #000;
+    }
+</style>
+</head>
+<body>
+
+<!-- <header id="header"> -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-header">
+    <div class="container-fluid" style=" padding-bottom:2px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+          <div class="col-md-2">
+              <a class="navbar-brand" href="#"><img src="./assets/images/Genox-India.jpg" alt="logo" style="height:8vh;"></a>
+          </div>
+          <div class="col-md-8">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 j-center">
+                    <li class="nav-item nav-anim">
+                      <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2">Contact Us</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+    </div>
+  </nav>
+<!-- </header> -->
+
+    <!-- Presentation Section -->
+
+    <div id="presentation-container" style="z-index: -1;">
+
+      <div id="presentation-title-description">
+        <h1> Product <span id="red-text">& Services</span> </h1>
+
+        <hr id="title-text-separator" />
+
+      </div>
+      <div id="service-features">
+        <div class="container" style="z-index: -1;">
+          <div class="row">
+  
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="https://genoxindia.com/wp-content/uploads/2022/02/long-range-wireless-camera-500x500-2.jpg" alt="product-img" class="">
+                          <span class="card-title"><span>CCTV Surveillance System</span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="./assets/images/Fire-detection-alram-2.jpg" alt="product-img" class="">
+                          <span class="card-title"><span>Fire Detection System</span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="./assets/images/access-control-system-1.jpeg" alt="product-img" class="">
+                          <span class="card-title"><span>Access Control System </span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="./assets/images/intrusion-alarm-system-500x500-1-2.jpg" alt="product-img" class="">
+                          <span class="card-title"><span>Electronic Security System</span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="./assets/images/Public-Address-System-4.jpg" alt="product-img" class="">
+                          <span class="card-title"><span>Public Address System</span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="product-card">
+                  <div class="card ">
+                      <!-- <div class="card-image"> -->
+                          <img src="./assets/images/Automatic-Car-Parking-Park-Boom-Barrier-Gate.jpg" alt="product-img" class="">
+                          <span class="card-title"><span>Entry Management System  </span></span>
+                      <!-- </div> -->
+                      <ul class="card-action-buttons">
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/lybete/full/jBMNzM/" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a>
+                          </li>
+                          <li><a class="btn-floating waves-effect waves-light red accent-2"><i class="material-icons like">favorite_border</i></a>
+                          </li>
+                          <li><a id="buy" class="btn-floating waves-effect waves-light blue"><i class="material-icons buy">add_shopping_cart</i></a>
+                          </li>
+                      </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s12">
+                            <p>
+                              <strong>Description:</strong> <br />
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare auctor metus vel mollis.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Product Content Section -->
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Media - Video Section -->
+
+    <div id="main-media-container">
+
+    <!-- Newsletter Section -->
+    <div id="newsletter-container">
+      <div id="newsletter-title-description">
+        <h2> Join our Newsletter! </h2>
+
+        <hr id="title-text-separator" />
+
+      </div>
+
+      <div id="email-input-container">
+        <form id="email-form" action="https://www.freecodecamp.com/email-submit">
+          <label> Join our Newsletter and don't miss future deals! </label>
+          <input type="email" placeholder="Enter your e-mail" id="email" />
+          <button id="submit" type="submit"> Subscribe </button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+
+  <div class="container-fluid">
+    <footer class="pt-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1">
+          <form>
+            <h5> Join our Newsletter </h5>
+            <p>Join our Newsletter and don't miss future deals!.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              
+            </div>
+            <br><button class="btn btn-primary" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-center border-top ">
+        <p>© 2023 Genox India Pvt. LTd., Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./src/js/jquery.min.js"></script>
+  <script src="./src/js/bootstrap.bundle.min.js" ></script>
+  <script src="./src/js/materialize.min.js"></script>
+  <script>
+
+$(document).ready(function(){
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop() > 100) {
+      $(".nav-header").addClass("bg-light");
+      $(".nav-header").find('a').addClass("menu_link");
+      $("#header-img").attr("src", "https://i.ibb.co/0jM3ZvH/reverse-black.png");
+  } else {
+      //remove the background property so it comes transparent again (defined in your css)
+     $(".nav-header").removeClass("bg-light");
+     $(".nav-header").find('a').removeClass("menu_link");
+     $("#header-img").attr("src", "https://i.ibb.co/LxGJ5gF/reverse-white.png");
+  }
+});
+
+// Responsive menu
+$("#responsive-nav-bar").hide();
+
+$("#image-button-black").click(function(){
+  $("#responsive-nav-bar").slideToggle();
+});
+
+$("#responsive-home-item , #responsive-features-item , #responsive-products-item , #responsive-media-item , #responsive-pricing-item").click(function(){
+  $("#responsive-nav-bar").slideToggle(200);
+})
+
+});
+
+  </script>
+
+
+<script>
+  ScrollOut({
+    targets: 'h2, h3, p, a'
+  });
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    function animateSgv(id, delay, delayIncrement) {
+      const logo = document.getElementById(id);
+      const logoPaths = document.querySelectorAll(`#${id} path`);
+      delay = delay;
+      for (let i = 0; i < logoPaths.length; i++) {
+        //console.log(logoPaths[i].getTotalLength());
+        logoPaths[i].style.strokeDasharray = logoPaths[i].getTotalLength();
+        logoPaths[i].style.strokeDashoffset = logoPaths[i].getTotalLength();
+        logoPaths[i].style.animation = `line-anim 2s ease forwards ${delay}s`;
+        delay += delayIncrement;
+        console.log(delay);
+      }
+      logo.style.animation = `fill 0.5s ease forwards ${delay}s`;
+    }
+    animateSgv("logo", 0, 0.1);
+  },
+  false
+);
+
+</script>
+</body>
+</html>
